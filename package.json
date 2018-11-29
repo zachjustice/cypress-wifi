@@ -10,8 +10,8 @@
     "react-scripts": "2.1.1"
   },
   "scripts": {
-    "cypress:open": "CYPRESS_E2E_TARGET=$(node get_anthem_redirect_url.js) cypress open",
-    "cypress:run": "CYPRESS_E2E_TARGET=$(node get_anthem_redirect_url.js) $(npm bin)/cypress run --headed",
+    "cypress:open": "CYPRESS_E2E_TARGET=$(node get_redirect_url.js) cypress open",
+    "cypress:run": "CYPRESS_E2E_TARGET=$(node get_redirect_url.js) $(npm bin)/cypress run --headed",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
