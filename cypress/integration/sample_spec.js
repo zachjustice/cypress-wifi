@@ -14,7 +14,7 @@ describe('My First Test', function () {
             let user = creds.user
             let password = creds.password
             let timestamp = creds.timestamp
-            let threshold = (new Date()).setHours((new Date()).getHours() - 24)
+            let threshold = (new Date()).setHours((new Date()).getHours() - 20)
             console.log('threshold', threshold)
 
             if (user && password && timestamp && timestamp > threshold) {
