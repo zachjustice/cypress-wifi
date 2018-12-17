@@ -1,32 +1,17 @@
 {
-  "name": "storyboard-react",
+  "name": "cypress-wifi",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "lodash": "^4.17.11",
-    "prop-types": "^15.6.2",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-scripts": "2.1.1"
+    "prop-types": "^15.6.2"
   },
   "scripts": {
     "cypress:open": "CYPRESS_E2E_TARGET=$(node get_redirect_url.js) cypress open",
     "cypress:run": "CYPRESS_E2E_TARGET=$(node get_redirect_url.js) $(npm bin)/cypress run --headed",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "run": "touch creds.json && cypress:open"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
+  "dependencies": {
     "cypress": "^3.1.1",
     "fetch": "^1.1.0"
   }
